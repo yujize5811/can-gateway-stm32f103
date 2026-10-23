@@ -1,0 +1,41 @@
+# ===== Keil MDK 编译输出 =====
+Objects/
+Listings/
+RTE/_Target_1/
+DebugConfig/
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.lst
+*.map
+*.dep
+*.lnp
+*.htm
+*.iex
+*.sct
+*.build_log.htm
+
+# ===== Keil 用户界面状态（各人机器不同，不共享）=====
+*.uvguix.*
+*.uvoptx
+*.uvprojx.bak*
+*.uvproj.bak*
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ===== 系统垃圾 =====
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ===== 临时与日志 =====
+*.log
+tmp/
+output/
