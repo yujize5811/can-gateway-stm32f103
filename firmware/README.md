@@ -11,7 +11,7 @@
 | 芯片 | STM32F103C8T6 | 64 KB Flash / 20 KB RAM |
 | 时钟 | HSE 8 MHz → PLL ×9 → 72 MHz | 标准配置 |
 | APB1 | 36 MHz | CAN 时钟源，位定时按此计算 |
-| CAN1 | 500 kbps，BS1=6 / BS2=2 / BRP=4 | 采样点 77.8% |
+| CAN1 | 500 kbps，BS1=6 / BS2=2 / BRP=8 | 36MHz/(8×9)=500kHz，采样点 77.8% |
 | CAN 模式 | 先 **Loopback** 自测，通了再改 Normal | 单板也能验证收发链路 |
 | CAN NVIC | 使能 RX0 中断，抢占优先级建议 2 | 避免被其他中断延迟 |
 | USART1 | 115200 8N1 | 调试与统计输出 |

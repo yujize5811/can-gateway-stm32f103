@@ -1,5 +1,6 @@
 # ===== Keil MDK 编译输出 =====
 Objects/
+CAN-GW/
 Listings/
 RTE/_Target_1/
 DebugConfig/
