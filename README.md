@@ -87,6 +87,24 @@ tools/       上位机脚本
 
 - 待补充
 
-## 10. License
+## 10. 推到 GitHub（三步）
+
+仓库已在本地初始化并提交，只差推到远端：
+
+1. GitHub 网页 → **New repository** → 名字填 `can-gateway-stm32f103`
+   → **不要勾选** "Add a README"（本地已有）→ Create；
+2. 在本目录执行：
+
+```bash
+git remote add origin https://github.com/你的用户名/can-gateway-stm32f103.git
+git push -u origin main
+```
+
+3. 第一次 push 要填账号 + **Personal Access Token**（不是密码）：
+   GitHub → Settings → Developer settings → Personal access tokens → Generate new token → 勾 `repo`。
+
+> 国内网络慢可以配 SSH key，或同步一份到 Gitee 做镜像。
+
+## 11. License
 
 MIT
