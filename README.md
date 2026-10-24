@@ -26,8 +26,10 @@
 
 ## 3. Roadmap
 
-- [x] 协议层代码骨架（`firmware/Middleware/can_gw`，AC6 编译通过，待硬件验证）
+- [x] Keil 工程集成完成（`firmware/MDK-ARM/CAN-GW.uvprojx`，0 Error，Code=22 KB）
+- [x] 协议层代码（`firmware/Middlewares/can_gw`，AC6 编译通过，待硬件验证）
 - [x] 统计模块与上位机脚本（CSV → 丢帧/重传率/吞吐）
+- [x] 踩坑记录：[AC5 → AC6 迁移排查清单](docs/ac5-to-ac6-migration.md)（35 个工程批量迁移经验）
 - [ ] W1 单板回环自测（Loopback）
 - [ ] W1 双节点 Normal 模式互发 + 过滤器
 - [ ] W2 协议 v1：单帧 + CRC8（硬件验证）
@@ -53,11 +55,19 @@
 ## 5. 目录结构
 
 ```
-docs/        协议文档、测试报告、图片
+docs/        协议文档、测试报告、迁移排查清单、图片
 firmware/    Keil 工程（CubeMX 生成）
 hardware/    接线与硬件说明
 tools/       上位机脚本
 ```
+
+### 文档索引
+
+| 文档 | 内容 |
+|---|---|
+| [docs/protocol.md](docs/protocol.md) | CAN-GW 应用层协议：ID 分配、帧格式、重传参数 |
+| [docs/test-report.md](docs/test-report.md) | 功能 / 故障注入 / 性能测试记录 |
+| [docs/ac5-to-ac6-migration.md](docs/ac5-to-ac6-migration.md) | **AC5 → AC6 迁移排查清单**（Keil 老工程迁移实战） |
 
 ## 6. 快速开始
 
